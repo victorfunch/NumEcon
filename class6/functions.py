@@ -1,15 +1,12 @@
-def u(x1:float, x2:float, _dict:dict) -> float:
+def u(x1:float, x2:float, alpha:float) -> float:
     """ Calculates utility of chosen (x1, x2) bundle.
-
+    
     Args:
-
-    x1 (float): quantity of x1.
-    x2 (float): quantity of x2.
-    _dict (dict): dictionary of model parameters. 
+        x1 (float): quantity of x1.
+        x2 (float): quantity of x2.
 
     Returns:
-
-    (float): utility of bundle.
+        (float): utility of bundle.
     """
-    utility = _dict['beta'] + x1**_dict['alpha'] * x2**(1-_dict['alpha'])
+    utility = x1**alpha * x2**(1-alpha)
     return utility
