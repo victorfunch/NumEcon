@@ -1,0 +1,7 @@
+Strings	Numbers
+I	1
+Love	2
+Coding	3
+In	5
+Jupyter	8
+Lab	13
